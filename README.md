@@ -1,2 +1,2 @@
 # Google-MicroServices
- Just for a project
+In this project we will create two microservices in Google Cloud 
