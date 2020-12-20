@@ -6,6 +6,6 @@ WORKDIR /usr/src/adhisapp
 
 COPY app.py .
 
-EXPOSE 3000
+EXPOSE 8888
 RUN pip install requests
 CMD [ "python", "app.py" ]

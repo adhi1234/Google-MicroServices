@@ -6,6 +6,6 @@ WORKDIR /usr/src/adhisapp
 
 COPY gcloud_app.py .
 
-EXPOSE 5000
+EXPOSE 4444
 RUN pip install requests
 CMD [ "python", "gcloud_app.py" ]

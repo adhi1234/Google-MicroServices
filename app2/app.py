@@ -3,9 +3,9 @@ import pprint
 import flask
 from flask import request, jsonify
 host='0.0.0.0'
-port='3000'
+port='8888'
 
-details=requests.get('http://localhost:5000/gcloudapi/data')
+details=requests.get('http://localhost:4444/gcloudapi/data')
 print("GETTING DATA FROM GCLOUD APP")
 pprint.pprint(details.json())
 
@@ -43,8 +43,7 @@ def get_api_data():
 @master_app.route('/masterapp/data',methods=['GET'])
 
 def get_masterapi_data():
-    return jsonify(data_2)
+    return jsonify(details.json())
 
 
 master_app.run(host,port)
-
